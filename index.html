@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            .font-lato {
+                font-family: 'Lato', sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar   ">
+                <a class="btn btn-ghost bg-fuchsia-400 normal-case text-xl text">Digital Tasbih</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class=" mt-12 font-bold text-center text-7xl text-indigo-500">Digital Tasbih</h1>
+
+        <section class="grid grid-cols-3 mt-40 items-center max-w-screen-2xl mx-auto ml-32">
+            <!-- Subahanallah content -->
+            <div class="card w-96 h-60 bg-neutral text-neutral-content">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl pb-6">Subhan Allah</h2>
+                  <h3 id="saDisplay" class="pb-6 text-4xl">0</h3>
+                  <div class="card-actions justify-end ">
+                    <button id="saIn" class="btn text-white border-none bg-lime-500">Incriment</button>
+                    <button id="saDe" class="btn text-white border-none bg-red-700">Decriment</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Alhamdulillah Content -->
+            <div class="card w-96 h-60 bg-neutral text-neutral-content">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl pb-6">Alhamdulillah</h2>
+                  <h3 id="alDisplay" class="pb-6 text-4xl">0</h3>
+                  <div class="card-actions justify-end ">
+                    <button id="alIn" class="btn text-white border-none bg-lime-500">Incriment</button>
+                    <button id="alDe" class="btn text-white border-none bg-red-700">Decriment</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Allah Huakber content -->
+            <div class="card w-96 h-60 bg-neutral text-neutral-content">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl pb-6">Allahuakbar</h2>
+                  <h3 id="ahDisplay" class="pb-6 text-4xl">0</h3>
+                  <div class="card-actions justify-end ">
+                    <button id="ahIn" class="btn text-white border-none bg-lime-500">Incriment</button>
+                    <button id="ahDe" class="btn text-white border-none bg-red-700">Decriment</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <div class="text-center mt-20">
+            <button id="resetAll" class="btn  text-white border-none bg-amber-500">RESET All TASBIH</button>
+          </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
